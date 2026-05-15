@@ -1,0 +1,15 @@
+# Optional metric backends used by:
+#   - calculate_rouge_scores       (rouge-score)
+#   - calculate_bert_scores        (bert-score, downloads ~1.5GB transformer)
+#   - calculate_sentence_similarity (sentence-transformers, downloads ~90MB model)
+#
+# These are NOT needed to run the default benchmark, which only reports
+# BLEU + F1 + LLM-judge. Install only if you call the above functions directly.
+#
+# Usage:
+#     pip install -r requirements-extra-metrics.txt
+# or (with uv):
+#     uv pip install -r requirements-extra-metrics.txt
+bert-score>=0.3.13
+rouge-score>=0.1.2
+sentence-transformers>=2.2.0

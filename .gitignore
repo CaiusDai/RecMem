@@ -1,0 +1,66 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test / coverage / type-checking caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets / local config
+.env
+.env.local
+.env.*.local
+
+# RecMem runtime artifacts
+# Dataset downloads (LoCoMo / LongMemEval-S) — users provide their own
+dataset/
+# Result outputs / per-conversation memory dumps / Qdrant local stores
+results/
+*.qdrant/
+
+# Logs
+*.log

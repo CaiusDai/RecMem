@@ -1,0 +1,35 @@
+[project]
+name = "recmem"
+version = "0.1.0"
+description = "RecMem: source code and evaluation for the RecMem memory system."
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "openai>=1.0.0",
+    "tiktoken>=0.5.0",
+    "json-repair>=0.30.0",
+    "qdrant-client>=1.15.0",
+    "nltk>=3.8.0",
+    "tqdm>=4.65.0",
+    "python-dotenv>=1.0.0",
+    "jinja2>=3.1.0",
+]
+
+# Optional metric backends used by `evaluation.metrics.utils` (ROUGE,
+# BERTScore, sentence-similarity). Not needed for the default benchmark,
+# which only reports BLEU + F1 + LLM-judge.
+#
+# Install with:
+#     pip install -e '.[extra-metrics]'
+# or (with uv):
+#     uv sync --extra extra-metrics
+[project.optional-dependencies]
+extra-metrics = [
+    "bert-score>=0.3.13",
+    "rouge-score>=0.1.2",
+    "sentence-transformers>=2.2.0",
+]
+
+[tool.uv]
+package = false
